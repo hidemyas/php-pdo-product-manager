@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Ürün Yönetimi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <nav class="navbar bg-light my-navbar">
+                <div class="container">
+                    <span class="navbar-brand mb-0 h1"><i class="bi bi-cpu"></i> PHP İle Ürün Yönetimi</span>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <main>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="display-6"><i class="bi bi-funnel"></i> Filtrele</h2>
+                    <form action="" class="filter-form">
+
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        Fiyata Göre Filtrele
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <div class="row g-2">
+                                            <div class="col-md">
+                                                <div class="form-floating">
+                                                    <input type="number" class="form-control" id="minPrice" name="minPrice" placeholder="En Az" value="0">
+                                                    <label for="minPrice">En Az</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <div class="form-floating">
+                                                    <input type="number" class="form-control" id="maxPrice" name="maxPrice" placeholder="En Az" value="0">
+                                                    <label for="maxPrice">En Fazla</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        <i class="bi bi-bookmarks-fill"></i> Kategoriye Göre
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                                <label class="form-check-label" for="firstCheckbox">Kategori 1</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                                <label class="form-check-label" for="secondCheckbox">Kategori 2</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                                <label class="form-check-label" for="thirdCheckbox">Kategori 3</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        <i class="bi bi-search"></i> Ürün Arama
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="search" placeholder="search">
+                                            <label for="search">Lütfen ürün adı giriniz</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary btn-block my-2 btn-sm w-100">Ürünleri Getir</button>
+                    </form>
+                </div>
+                <div class="col-md-8">
+                    <div class="products row">
+                        <div class="col-md-4 my-2">
+                            <div class="card product-card">
+                                <img src="assets/img/product.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="product-title"><h5 class="card-title">Ürün İsmi</h5></a>
+                                    <a href="#">
+                                        <span class="badge rounded-pill text-bg-primary">Kategori İsmi</span>
+                                    </a>
+                                    <p class="card-text">Ürün Kısa Açıklaması</p>
+                                    <div class="d-flex price-info justify-content-between">
+                                        <span class="sale-price text-success">120,00₺</span>
+                                        <del><span class="sale-price text-secondary del">120,00₺</span></del>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <div class="card product-card">
+                                <img src="assets/img/product.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="product-title"><h5 class="card-title">Ürün İsmi</h5></a>
+                                    <a href="#">
+                                        <span class="badge rounded-pill text-bg-primary">Kategori İsmi</span>
+                                    </a>
+                                    <p class="card-text">Ürün Kısa Açıklaması</p>
+                                    <div class="d-flex price-info justify-content-between">
+                                        <span class="sale-price ">120,00₺</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <div class="card product-card">
+                                <img src="assets/img/product.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="product-title"><h5 class="card-title">Ürün İsmi</h5></a>
+                                    <a href="#">
+                                        <span class="badge rounded-pill text-bg-primary">Kategori İsmi</span>
+                                    </a>
+                                    <p class="card-text">Ürün Kısa Açıklaması</p>
+                                    <div class="d-flex price-info justify-content-between">
+                                        <span class="sale-price ">120,00₺</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <div class="card product-card">
+                                <img src="assets/img/product.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="product-title"><h5 class="card-title">Ürün İsmi</h5></a>
+                                    <a href="#">
+                                        <span class="badge rounded-pill text-bg-primary">Kategori İsmi</span>
+                                    </a>
+                                    <p class="card-text">Ürün Kısa Açıklaması</p>
+                                    <div class="d-flex price-info justify-content-between">
+                                        <span class="sale-price text-success">120,00₺</span>
+                                        <del><span class="sale-price text-secondary del">120,00₺</span></del>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <div class="card product-card">
+                                <img src="assets/img/product.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="product-title"><h5 class="card-title">Ürün İsmi</h5></a>
+                                    <a href="#">
+                                        <span class="badge rounded-pill text-bg-primary">Kategori İsmi</span>
+                                    </a>
+                                    <p class="card-text">Ürün Kısa Açıklaması</p>
+                                    <div class="d-flex price-info justify-content-between">
+                                        <span class="sale-price ">120,00₺</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 my-2">
+                            <div class="card product-card">
+                                <img src="assets/img/product.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="#" class="product-title"><h5 class="card-title">Ürün İsmi</h5></a>
+                                    <a href="#">
+                                        <span class="badge rounded-pill text-bg-primary">Kategori İsmi</span>
+                                    </a>
+                                    <p class="card-text">Ürün Kısa Açıklaması</p>
+                                    <div class="d-flex price-info justify-content-between">
+                                        <span class="sale-price ">120,00₺</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
