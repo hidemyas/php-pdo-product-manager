@@ -49,7 +49,7 @@ composer install
 
 5. Tarayıcıdan erişim:
 ```
-http://localhost/urun-yonetim-sistemi/public/
+http://localhost/
 ```
 
 ## Kullanılan Teknolojiler
