@@ -65,7 +65,7 @@
                     <div id="submenu-2" class="collapse submenu submenu-2" data-bs-parent="#menu-accordion">
                         <ul class="submenu-list list-unstyled">
                             <li class="submenu-item"><a class="submenu-link" href="<?= SITE_URL ?>/panel/settings">Ayar Panosu</a></li>
-                            <li class="submenu-item"><a class="submenu-link" href="<?= SITE_URL ?>/panel/editSiteSettings">Yönetici Ayarları</a></li>
+                            <li class="submenu-item"><a class="submenu-link" href="<?= SITE_URL ?>/panel/editSiteSettings">Site Ayarları</a></li>
                             <li class="submenu-item"><a class="submenu-link" href="<?= SITE_URL ?>/panel/editProfile">Yönetici Ayarları</a></li>
 
                         </ul>
