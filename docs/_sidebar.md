@@ -1,0 +1,6 @@
+- [Giriş](README.md)
+- [Kurulum](tr/kurulum.md)
+- [Admin Panel](tr/admin-panel.md)
+- [Ürün Yönetimi](tr/urun-yonetimi.md)
+- [Site Ayarları](tr/site-ayarlari.md)
+- [Admin Bilgileri Değiştirme](tr/admin-degistirme.md)

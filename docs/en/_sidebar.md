@@ -1,0 +1,6 @@
+- [Home](README.md)
+- [Basic Setup](en/kurulum.md)
+- [Admin Panel](en/admin-panel.md)
+- [Product Management](en/urun-yonetimi.md)
+- [Site Settings](en/site-ayarlari.md)
+- [Change Admin Info](en/admin-degistirme.md)
