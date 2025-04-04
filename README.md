@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Ürün Yönetim Sistemi (PHP MVC PDO)
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
@@ -172,4 +172,3 @@ Geliştirici: HidemYas
 E-posta: info@hidemyas.org  
 Proje Linki: [https://github.com/hidemyas/php-pdo-product-manager](https://github.com/hidemyas/php-pdo-product-manager)
 
->>>>>>> d699920953e3c9f9fb31537fd9471a9085bebf03
